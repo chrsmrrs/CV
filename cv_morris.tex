@@ -1,38 +1,67 @@
 \documentclass[11pt, a4paper]{scrartcl}
 
-\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{cmap}       
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{exscale}
+\usepackage[l2tabu, orthodox]{nag}
+
 \setlength\parindent{0in} 
-\usepackage[usenames,dvipsnames]{xcolor} % Custom colors
+\usepackage[usenames,dvipsnames]{xcolor} 
 
 \usepackage{marginnote} 
 \newcommand{\years}[1]{\marginnote {\bf #1}} 
 \renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{13pt} 
+\setlength{\marginparsep}{9pt} 
 \reversemarginpar
 
-\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Christopher Morris - CV},pdfauthor={Christopher Morris}]{hyperref}
-\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue}
+\usepackage[
+bookmarks, 
+colorlinks, 
+breaklinks, 
+pdftitle={Christopher Morris - CV},
+pdfauthor={Christopher Morris}
+]{hyperref}
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=black}
 
-\setkomafont{sectioning}{\normalfont\normalcolor\bfseries}
+\usepackage{url}
+\usepackage{enumitem}
+\setlist[enumerate]{noitemsep, topsep=0.5\topsep}
+\setlist[description]{noitemsep, topsep=0.5\topsep}
+\setlist[itemize]{noitemsep, topsep=0.5\topsep}
 
+\usepackage{microtype}
+\usepackage{ellipsis}
+\usepackage{xspace}
+\usepackage{hfoldsty}
+\usepackage{fourier}
+
+\addtokomafont{disposition}{\rmfamily}
+\addtokomafont{descriptionlabel}{\rmfamily}
 
 \begin{document}
 
 {\LARGE \bf Christopher Morris}\\[1cm] 
 TU Dortmund University\\ 
-Otto-Hahn-Stra\ss{}e 5\\
+Otto-Hahn-Stra\ss{}e 14\\
 Dortmund, 44227
-Germany\\[.2cm]
-Phone: +49\ 231~755~7707\\ 
-Fax: +49~231~755~7740\\[.2cm] 
-Email: \href{mailto:christopher.morris@udo.edu}{christopher.morris@udo.edu}\\
-URL: \href{www.christophermorris.info}{www.christophermorris.info}\\ 
 
-Born: September 20, 1987---Leverkusen, Germany\\ 
-Nationality: German/British 
+\begin{description}
+	\item[Phone:] 
+	+49\ 231~755~7707	
+	\item[Fax:] 
+	+49~231~755~7740
+	\item[Email:] \href{mailto:christopher.morris@udo.edu}{christopher.morris@udo.edu}
+	\item[URL:] \href{2www.christophermorris.info}{www.christophermorris.info}
+	\item[Born] 
+	September 20, 1987---Leverkusen, Germany
+	\item[Nationality:] 
+	German/British 
+\end{description}
 
 \section*{Current Position}
-\emph{PhD Student/Research Associate}, TU Dortmund University, Dortmund % Your current or previous employment position
+\emph{PhD Student/Research Associate}, TU Dortmund University, Dortmund
 
 \section*{Areas of Specialization}
 Graph Algorithms, Machine Learning with Graphs, Combinatorial Optimization
@@ -43,48 +72,39 @@ Graph Algorithms, Machine Learning with Graphs, Combinatorial Optimization
 
 \section*{Publications}
 
-\years{2016} Christopher Morris, Nils M. Kriege, Kristian Kersting, Petra Mutzel, \\
-\emph{Faster Kernels for Graphs with Continuous Attributes via Hashing},
-
+\years{2016} Christopher Morris, Nils M. Kriege, Kristian Kersting, Petra Mutzel,\\
+\emph{Faster Kernels for Graphs with Continuous Attributes via Hashing},\\
 IEEE International Conference on Data Mining (ICDM) 2016\\
 
-\years{2017} Christopher Morris, Kristian Kersting, Petra Mutzel, \\
-\emph{Global Weisfeiler-Lehman Graph Kernels},
-\emph{In submission}\\
+\years{2017} Christopher Morris, Kristian Kersting, Petra Mutzel,\\
+\emph{Global Weisfeiler-Lehman Graph Kernels},\\
+In submission\\
 
-\years{2017} Fritz B\"okler, Mathias Ehrgott, Christopher Morris, Petra Mutzel, \\
+\years{2017} Fritz B\"okler, Mathias Ehrgott, Christopher Morris, Petra Mutzel,\\
 \emph{Output-sensitive Complexity of Multiobjective Combinatorial Optimization},\\
-\emph{Accepted for publication in \emph{Journal of Multicriteria Decision Analysis}}
-
+Accepted for publication in \emph{Journal of Multicriteria Decision Analysis}
 
 \section*{Teaching}
 \years{WS 2016/17} 
-Student project group\emph{ Algorithm Engineering for Graph Data Mining}\\
+Student project group \emph{Algorithm Engineering for Graph Data Mining}\\
 Seminar \emph{Algorithms Unplugged}
 
 \years{SS 2016} 
 Seminar \emph{Algorithm Engineering}\\ 
 Seminar \emph{Graph Mining}
 
-\years{WS 2015/16} Seminar 
-\emph{Algorithm Engineering}\\
+\years{WS 2015/16} Seminar \emph{Algorithm Engineering}\\
 \years{As a student} 
-Programming tutorials for engineering students, teaching assistent for a course on theoretical computer science
+Programming tutorials for engineering students,\\
+Teaching assistant for a course on theoretical computer science
 
-\section*{Service to the profession}
+\section*{Service to the Profession}
 
 Reviewer for WALCOM 2017
-
-\vfill{} % Whitespace before final footer
-
-%----------------------------------------------------------------------------------------
-%	FINAL FOOTER
-%----------------------------------------------------------------------------------------
+\vfill{} 
 
 \begin{center}
-{\scriptsize Last updated: \today} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+{\scriptsize Last updated: \today}
 \end{center}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
