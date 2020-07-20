@@ -9,13 +9,7 @@
 
 \setlength\parindent{0in} 
 \usepackage[usenames,dvipsnames]{xcolor} 
-
-\usepackage{marginnote} 
-\newcommand{\years}[1]{\marginnote {\textbf{#1}}} 
-\renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{15pt} 
-\marginparwidth=60pt
-\reversemarginpar
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
 
 \usepackage[
 bookmarks, 
@@ -36,155 +30,198 @@ pdfauthor={Christopher Morris}
 \usepackage{ellipsis}
 \usepackage{xspace}
 \usepackage{hfoldsty}
-\usepackage{fourier}
-
 
 %\addtokomafont{disposition}{\rmfamily}
 %\addtokomafont{descriptionlabel}{\rmfamily}
-\usepackage{lmodern}
+%\usepackage{lmodern}
+\usepackage[sfdefault]{classico}
+
+%\usepackage{fourier}
+%\usepackage{tgpagella}
+%\usepackage{times}
 %\renewcommand{\familydefault}{\sfdefault} 
 \begin{document}
 
-{\LARGE  \textsf{\textbf{\ Christopher Morris}}}\\
-\begin{description}
-	\item[Address:]	 Université de Montréal\\ Campus André-Aisenstadt Building 2920,\\ Chemin de la Tour\\Canada
-	\item[Email:] \href{mailto:christopher.morris@udo.edu}{christopher.morris@udo.edu}
-	\item[Website:] \href{www.christophermorris.info}{www.christophermorris.info}
-	\item[GitHub:] \href{https://github.com/chrsmrrs}{chrsmrrs}
-	\item[Nationality:] 
-	German/British 
-\end{description}
+\section*{\textcolor{maroon}{Christopher Morris}}
+\vspace{-20pt}
+\hrulefill
+\subsection*{Address}
+\noindent
+\begin{tabular}{l}
+Dr.~Christopher Morris\\
+Université de Montréal\\ 
+Campus André-Aisenstadt, Building 2920,\\ 
+Chemin de la Tour,\\
+Montréal, QC, Canada\\
+%Phone: +1 438 389 2009\\
+E-mail: \texttt{chris@christophermorris.info} \\
+Homepage: \url{http://www.christophermorris.info} \\
+\end{tabular}
 
-\section*{Areas of Specialization}
-Machine Learning with Graphs (Graph Embeddings, Graph Kernels, Graph Neural Networks), Machine Learning for Combinatorial Optimization, Discrete Algorithms
+\subsection*{Areas of Specialization}
+\noindent
+Graph embeddings (graph kernels, graph neural networks, invariant neural networks) from a theoretical as well as applied viewpoint, and their application in combinatorial optimization. 
 
-\section*{Positions}
+\subsection*{Education}
+\noindent
+\begin{tabular}{p{2.1cm}p{12.0cm}}
+	2015--2019&PhD in Computer Science, TU Dortmund University, final grade: 1.0 with distinction  (best possible grade)\\
+	2012--2015&M.~Sc.~in Computer Science, TU Dortmund University, final grade: 1.0 (best possible grade)\\
+	2008--2012&B.~Sc.~in Computer Science, TU Dortmund University\\
+	1997--2007&University Entrance Qualification, Erzbisch\"ofliches St.-Angela-Gymnasium, Wipperf\"urth\\
+\end{tabular}
 
-\years{03.2020--}  Postdoc at Polytechnique Montréal in the group of Andrea Lodi\\
-\years{2015--2019} \emph{PhD Student/Research Associate}, TU Dortmund University, within the Collaborative Research Center SFB 876, graduated with highest distinctions (excellent)\\
-\years{1--3/2018} \emph{Research stay at Stanford University}, staying with Jure Leskovec
+\subsection*{Employment}
+\begin{tabular}{p{2.1cm}p{12.0cm}}
+	Since 2020& Postdoc in the group of Andrea Lodi, Polytechnique Montréal\\
+	2015--2019&PhD student and research associate, TU Dortmund University, within the Collaborative Research Center SFB 876\\
+	2007--2008&Mandatory civil service\\
+\end{tabular}
 
-\section*{Education}
-\years{1997--2007} University Entrance Qualification, Erzbisch\"ofliches St.-Angela-Gymnasium, Wipperf\"urth\\
-\years{2008--2012} B.~Sc.~in Computer Science, TU Dortmund University\\
-\years{2012--2015} M.~Sc.~in Computer Science, TU Dortmund University, Final Grade: 1.0 (best possible grade) \\
+\renewcommand{\refname}{\large\bfseries Publications}
 
-\section*{Publications}
+\begin{thebibliography}{5}
+\subsubsection*{Conference Papers}
+	\bibitem{Fey+2020}
+	Matthias Fey, Jan E. Lenssen, Christopher Morris, Jonathan Masci, Nils M. Kriege.
+    \emph{Deep Graph Matching Consensus},
+	Conference on Learning Representations (ICLR) 2020.
+	
+	\bibitem{Oet+2020}
+	Lutz Oettershagen, Nils Kriege, Christopher Morris, Petra Mutzel.
+	\emph{Temporal Graph Kernels for Classifying Dissemination Processes},
+	SIAM International Conference on Data Mining (SDM) 2020.
+	
+	\bibitem{Mor+2019}
+	Christopher Morris, Martin Ritzert, Matthias Fey, William L. Hamilton, Jan Eric Lenssen, Gaurav Rattan, Martin Grohe.
+	\newblock \emph{Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks},
+	\newblock AAAI Conference on Artificial Intelligence (AAAI) 2019.
+	
+	\bibitem{Yin+2018}
+	Rex Ying, Jiaxuan You, Christopher Morris, Xiang Ren, William L. Hamilton, Jure Leskovec.
+	\emph{Hierarchical Graph Representation Learning with Differentiable Pooling},
+	Neural Information Processing Systems (NeurIPS) 2018, spotlight presentation.
+	
+	\bibitem{Kri+2018}
+	Nils M.~Kriege, Christopher Morris, Anja Rey, Christian Sohler.
+	\emph{A Property Testing Framework for the Theoretical Expressivity of Graph Kernels},
+	International Joint Conference on Artificial Intelligence (IJCAI) 2018.
+	
+	\bibitem{Mor+2017}
+    Christopher Morris, Kristian Kersting, Petra Mutzel.
+	\emph{Glocalized Weisfeiler-Lehman Graph Kernels: Global-Local Feature Maps of Graphs},
+	IEEE International Conference on Data Mining (ICDM) 2017, full paper.
+	
+	\bibitem{Mor+2017}
+	Christopher Morris, Nils M.~Kriege.\\
+	\emph{Recent Advances in Kernel-Based Graph Classification},
+	European Conference on Machine Learning \& Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) 2017.
+	
+	\bibitem{Mor+2016}
+    Christopher Morris, Nils M.~Kriege, Kristian Kersting, Petra Mutzel.
+	\emph{Faster Kernels for Graphs with Continuous Attributes via Hashing},
+	IEEE International Conference on Data Mining (ICDM) 2016.
+	
+\subsubsection*{Journal Articles}
+\bibitem{Mor+2020}
+Nils M.~Kriege,  Fredrik D. Johansson, Christopher Morris.
+\emph{A Survey on Graph Kernels},
+\emph{Applied Network Science}, 2020.
 
-\subsection*{Conference Papers}
+\bibitem{Mor+2020}
+Nils M.~Kriege,  Marion Neumann, Christopher Morris, Kristian Kersting, Petra Mutzel.
+\emph{A Unifying View of Explicit and Implicit Feature Maps for Structured Data: Systematic Studies of Graph Kernels},
+\emph{Data Mining and Knowledge Discovery}, 2019.
 
-\years{2020} Matthias Fey, Jan E. Lenssen, Christopher Morris, Jonathan Masci, Nils M. Kriege,  \\
-\emph{Deep Graph Matching Consensus},\\
-International Conference on Learning Representations (ICLR) 2020\\
+\bibitem{Mor+2016}
+Fritz B\"okler, Mathias Ehrgott, Christopher Morris, Petra Mutzel.
+\emph{Output-sensitive Complexity of Multiobjective Combinatorial Optimization},
+Journal of Multicriteria Decision Analysis, 2017.
 
-Lutz Oettershagen, Nils Kriege, Christopher Morris, Petra Mutzel,  \\
-\emph{Temporal Graph Kernels for Classifying Dissemination Processes},\\
-SIAM International Conference on Data Mining (SDM) 2020\\
+\subsubsection*{Workshop Papers}
 
+\bibitem{Mor+2020}
+Weisfeiler and Leman go sparse: Towards scalable higher-order graph embeddings.
+Christopher Morris, Gaurav Rattan, Petra Mutzel,
+Graph Representation Learning and Beyond (GRL+, ICML 2020).
 
-\years{2019}Christopher Morris, Martin Ritzert, Matthias Fey, William L. Hamilton, Jan Eric Lenssen, Gaurav Rattan, Martin Grohe,  \\
-\emph{Weisfeiler and Leman Go Neural: Higher-order Graph Neural Networks},\\
-AAAI Conference on Artificial Intelligence (AAAI) 2019 \\
+\bibitem{Mor+2020}
+TUDataset: A collection of benchmark datasets for learning with graphs.
+Christopher Morris, Gaurav Rattan, Petra Mutzel,
+Graph Representation Learning and Beyond (GRL+, ICML 2020).
 
-\years{2018} Rex Ying, Jiaxuan You, Christopher Morris, Xiang Ren, William L. Hamilton, Jure Leskovec, \\
-\emph{Hierarchical Graph Representation Learning with Differentiable Pooling},\\
- Neural Information Processing Systems (NeurIPS) 2018, spotlight presentation, and KDD Deep Learning Day 2018 \\
+\bibitem{Yin+2018}
+Rex Ying, Jiaxuan You, Christopher Morris, Xiang Ren, William L. Hamilton, Jure Leskovec.
+\emph{Hierarchical Graph Representation Learning with Differentiable Pooling},
+KDD Deep Learning Day 2018.
 
-Nils M.~Kriege, Christopher Morris, Anja Rey, Christian Sohler,\\
-\emph{A Property Testing Framework for the Theoretical Expressivity of Graph Kernels},\\
-International Joint Conference on Artificial Intelligence (IJCAI) 2018\\
+\subsubsection*{Preprint}
+\bibitem{Mor+2020}
+Christopher Morris, Petra Mutzel.
+\emph{Towards a practical $k$-dimensional Weisfeiler-Leman algorithm},
+\texttt{\url{https://arxiv.org/abs/1904.01543}}.
 
-\years{2017} Christopher Morris, Kristian Kersting, Petra Mutzel,\\
-\emph{Glocalized Weisfeiler-Lehman Graph Kernels: Global-Local Feature Maps of Graphs},\\
-IEEE International Conference on Data Mining (ICDM) 2017, \emph{Full paper}\\
+\subsubsection*{Thesis}
 
- Christopher Morris, Nils M.~Kriege,\\
-\emph{Recent Advances in Kernel-Based Graph Classification},\\
-European Conference on Machine Learning \& Principles and Practice of Knowledge Discovery in Databases (ECML PKDD) 2017\\
+\bibitem{Mor+2019}
+Christopher Morris.
+\emph{Learning with Graphs: Kernel and Neural Approaches}, PhD thesis, TU Dortmund University, 2019.
 
-\years{2016} Christopher Morris, Nils M.~Kriege, Kristian Kersting, Petra Mutzel,\\
-\emph{Faster Kernels for Graphs with Continuous Attributes via Hashing},\\
-IEEE International Conference on Data Mining (ICDM) 2016
+\bibitem{Mor+2015}
+Christopher Morris.
+\emph{Enumeration Complexity of Multicriteria Linear Optimization}, M. Sc., thesis TU Dortmund University, 2019.
 
-\subsection*{Journal Articles}
+	
+\end{thebibliography}
 
+\subsection*{Invited Talks}
+\begin{tabular}{p{2.1cm}p{12.0cm}}
+10/2019&IBM Research, Zürich, \emph{Graph Classification: Kernel and Neural Approaches}\\
+05/2019&NEC Research, Heidelberg, \emph{Graph Classification: Kernel and Neural Approaches}\\ 
+03/2018&Stanford, SNAPLab, Infolab, \emph{Learning Higher-order Graph Embeddings: Theory and Practice}\\
+07/2017&RWTH Aachen, Chair of Logic and the Theory of Discrete Systems, \emph{Graph Classification: Kernels and Beyond}\\
 
-\years{2019}
-Nils M.~Kriege,  Fredrik D. Johansson, Christopher Morris,\\
-\emph{A Survey on Graph Kernels},\\
-\emph{Accepted for publication in \emph{Applied Network Science}}\\
- (\texttt{\url{https://arxiv.org/abs/1903.11835}})\\
-
-Nils M.~Kriege,  Marion Neumann, Christopher Morris, Kristian Kersting, Petra Mutzel,\\
-\emph{A Unifying View of Explicit and Implicit Feature Maps for Structured Data: Systematic Studies of Graph Kernels},\\
-\emph{Accepted for publication in \emph{Data Mining and Knowledge Discovery}}\\
- (\texttt{\url{https://arxiv.org/abs/1703.00676}})\\
-
-\years{2017} Fritz B\"okler, Mathias Ehrgott, Christopher Morris, Petra Mutzel,\\
-\emph{Output-sensitive Complexity of Multiobjective Combinatorial Optimization},\\
-Journal of Multicriteria Decision Analysis, 2017\\
-
-\subsection*{Preprints}
-
-\years{2019} Christopher Morris, Petra Mutzel,\\
-\emph{Towards a practical $k$-dimensional Weisfeiler-Leman algorithm},\\
-(\texttt{\url{https://arxiv.org/abs/1904.01543}})\\
-
-\section*{Invited Talks}
-\years{10.2019} Talk at IBM Research, Zürich, \emph{Graph Classification: Kernel and Neural Approaches} 
-\years{5.2019} Talk at NEC Research, Heidelberg, \emph{Graph Classification: Kernel and Neural Approaches} 
-\years{3.2018} Talk at Stanford, SNAP, \emph{Learning Higher-order Graph Embeddings: Theory and Practice} 
-\years{7.2017} Talk at RWTH Aachen, Chair of Logic and the Theory of Discrete Systems, \emph{Graph Classification: Kernels and Beyond}
+\end{tabular}
 
 
-\section*{Teaching}
+
+
+
+\subsection*{Teaching}
 
 Supervised eight bachelor and master thesis, one intern\\
 
-\years{SS 2019} 
-Proseminar \emph{Graph Algorithms}\\ 
+\begin{tabular}{p{3.1cm}p{12.0cm}}
+SS 2019&Proseminar \emph{Graph Algorithms}\\
+WS 2017/18&Seminar \emph{Algorithm Engineering}\\
+SS 2017&Seminar \emph{Algorithm Engineering}\\
+WS 2016/17&Student project group \emph{Algorithm Engineering for Graph Data Mining}, Seminar \emph{Algorithms Unplugged}\\
+SS 2016&Seminar \emph{Algorithm Engineering}, Seminar \emph{Graph Mining}\\
+WS 2015/16& Seminar \emph{Algorithm Engineering}\\
+As a student& Programming tutorials for engineering students, teaching assistant for a course on theoretical computer science\\
+\end{tabular}
 
-\years{WS 2017/18} 
-Seminar \emph{Algorithm Engineering}\\ 
-
-\years{SS 2017} 
-Seminar \emph{Algorithm Engineering}\\ 
-
-\years{WS 2016/17} 
-Student project group \emph{Algorithm Engineering for Graph Data Mining}\\
-Seminar \emph{Algorithms Unplugged}\\
-
-\years{SS 2016} 
-Seminar \emph{Algorithm Engineering}\\ 
-Seminar \emph{Graph Mining}\\
-
-\years{WS 2015/16} Seminar \emph{Algorithm Engineering}\\
-
-\years{As a student} 
-Programming tutorials for engineering students,\\
-Teaching assistant for a course on theoretical computer science
-
-\section*{Service to the Profession}
-
-Reviewer for ISAAC 2018, ESA 2018, WALCOM 2017, IJCAI 2019, NeurIPS  2019, ALENEX 2019, AAAI 2020, ICML 2020, ICALP2020, IJCAI2020, NeurIPS 2020\\
-
-Program committee member for ECML-PKDD 2020\\
+\subsection*{Service to the Profession}
+Program committee member for IJCAI 2019, NeurIPS  2019, ALENEX 2019, AAAI 2020, ICML 2020, ICALP2020, IJCAI2020, ECML-PKDD 2020,  NeurIPS 2020, ICLR 2021\\
 
 Program committee member for \emph{Representation Learning on Graphs and Manifolds} (ICLR 2019 Workshop), \emph{Learning and Reasoning with Graph-Structured Data} (ICML 2019 Workshop), \emph{Graph Representation Learning} (NeurIPS 2019 Workshop), \emph{Graph Representation Learning and Beyond} (ICML 2020 Workshop)\\
 
-Occasional reviews for ACM Transactions on Knowledge Discovery from Data, IEEE Transactions on Cybernetics, IEEE Transactions on Mobile Computing, IEEE Transactions on Pattern Analysis and Machine Intelligence\\
+Reviewer for ISAAC 2018, ESA 2018, WALCOM 2017 \\
 
-
-
+Occasional reviews for IEEE Transactions on Pattern Analysis and Machine Intelligence, Journal of Machine Learning Research, ACM Transactions on Knowledge Discovery from Data, IEEE Transactions on Cybernetics, IEEE Transactions on Mobile Computing\\
 
 Initiator of \url{www.graphlearning.io}, a large collection of benchmark datasets for graph classification and regression\\
 
-Member of the appeal commission for the professorship \emph{Data Mining} (2017)
+Member of the appeal commission for the professorship \emph{Data Mining} (TU Dortmund University, 2017)
 
-\section*{Computational Skills}
-Python, C++, \LaTeX, Scikit-learn, NumPy, PyTorch, PyTorch Geometric
+\subsection*{Other}
+\begin{description}
+	\item[\em Computational Skills] Python, C++, \LaTeX, Scikit-learn, NumPy, PyTorch, PyTorch Geometric
+	\item[\em Languages] German (native), English (fluent)
+	\item[\em Citizenship] German and British
+\end{description}
 
-\section*{Referees}
+\subsection*{Referees}
 Prof.~Petra Mutzel\\
 Computational Analytics,\\ 
 Department of Computer Science,\\
