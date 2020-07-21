@@ -31,6 +31,10 @@ pdfauthor={Christopher Morris}
 \usepackage{xspace}
 \usepackage{hfoldsty}
 
+\usepackage{ifthen}
+\newcommand{\CC}[1][]{$\text{C\hspace{-.25ex}}^{_{_{_{++}}}}
+	\ifthenelse{\equal{#1}{}}{}{\text{\hspace{-.625ex}#1}}$}
+
 %\addtokomafont{disposition}{\rmfamily}
 %\addtokomafont{descriptionlabel}{\rmfamily}
 %\usepackage{lmodern}
@@ -178,7 +182,7 @@ Christopher Morris.
 \begin{tabular}{p{2.1cm}p{12.0cm}}
 10/2019&IBM Research, Zürich, \emph{Graph Classification: Kernel and Neural Approaches}\\
 05/2019&NEC Research, Heidelberg, \emph{Graph Classification: Kernel and Neural Approaches}\\ 
-03/2018&Stanford, SNAPLab, Infolab, \emph{Learning Higher-order Graph Embeddings: Theory and Practice}\\
+03/2018&Stanford, SNAP, Infolab, \emph{Learning Higher-order Graph Embeddings: Theory and Practice}\\
 07/2017&RWTH Aachen, Chair of Logic and the Theory of Discrete Systems, \emph{Graph Classification: Kernels and Beyond}\\
 
 \end{tabular}
@@ -216,7 +220,7 @@ Member of the appeal commission for the professorship \emph{Data Mining} (TU Dor
 
 \subsection*{Other}
 \begin{description}
-	\item[\em Computational Skills] Python, C++, \LaTeX, Scikit-learn, NumPy, PyTorch, PyTorch Geometric
+	\item[\em Computational Skills] Python, C\hspace{-2pt}+\hspace{-3pt}+, \LaTeX, Scikit-learn, NumPy, PyTorch, PyTorch Geometric
 	\item[\em Languages] German (native), English (fluent)
 	\item[\em Citizenship] German and British
 \end{description}
