@@ -45,7 +45,11 @@ pdfauthor={Christopher Morris}
 %\addtokomafont{descriptionlabel}{\rmfamily}
 %\usepackage{lmodern}
 \usepackage[varqu]{zi4}
-\usepackage[sfdefault]{classico}
+%\usepackage[sfdefault]{classico}
+\usepackage[tt=false]{libertine}
+\usepackage[]{classico}
+\usepackage[varqu]{zi4}
+\usepackage[libertine]{newtxmath}
 
 
 %\usepackage{fourier}
@@ -96,6 +100,12 @@ Graph embeddings (graph kernels, graph neural networks, invariant neural network
 
 \begin{thebibliography}{5}
 \subsubsection*{Conference Papers}
+	\bibitem{Mor+2020}
+    Christopher Morris, Gaurav Rattan, Petra Mutzel.
+\emph{Weisfeiler and Leman Go Sparse: Towards Scalable Higher-order Graph Neural Networks},
+Neural Information Processing Systems (NeurIPS) 2020,
+
+
 	\bibitem{Fey+2020}
 	Matthias Fey, Jan E. Lenssen, Christopher Morris, Jonathan Masci, Nils M. Kriege.
     \emph{Deep Graph Matching Consensus},
@@ -137,6 +147,12 @@ Graph embeddings (graph kernels, graph neural networks, invariant neural network
 	IEEE International Conference on Data Mining (ICDM) 2016.
 	
 \subsubsection*{Journal Articles}
+
+\bibitem{Mor+2020}
+Lutz Oettershagen, Nils M.~Kriege, Christopher Morris, and Petra Mutzel
+\emph{Classifying Dissemination Processes in Temporal Graphs},
+\emph{Big Data}, 2020.
+
 \bibitem{Mor+2020}
 Nils M.~Kriege,  Fredrik D. Johansson, Christopher Morris.
 \emph{A Survey on Graph Kernels},
@@ -152,7 +168,7 @@ Fritz B\"okler, Mathias Ehrgott, Christopher Morris, Petra Mutzel.
 \emph{Output-sensitive Complexity of Multiobjective Combinatorial Optimization},
 Journal of Multicriteria Decision Analysis, 2017.
 
-\subsubsection*{Workshop Papers}
+\subsubsection*{Workshop Papers (Peer-reviewed)}
 
 \bibitem{Mor+2020}
 Weisfeiler and Leman go sparse: Towards scalable higher-order graph embeddings.
@@ -169,11 +185,11 @@ Rex Ying, Jiaxuan You, Christopher Morris, Xiang Ren, William L. Hamilton, Jure 
 \emph{Hierarchical Graph Representation Learning with Differentiable Pooling},
 KDD Deep Learning Day 2018.
 
-\subsubsection*{Preprints}
-\bibitem{Mor+2020}
-Christopher Morris, Petra Mutzel.
-\emph{Towards a practical $k$-dimensional Weisfeiler-Leman algorithm},
-\texttt{\url{https://arxiv.org/abs/1904.01543}}.
+%\subsubsection*{Preprints}
+%\bibitem{Mor+2020}
+%Christopher Morris, Petra Mutzel.
+%\emph{Towards a practical $k$-dimensional Weisfeiler-Leman algorithm},
+%\texttt{\url{https://arxiv.org/abs/1904.01543}}.
 
 \subsubsection*{Thesis}
 
@@ -188,9 +204,15 @@ Christopher Morris.
 	
 \end{thebibliography}
 
+\subsection*{Academic Honors}
+\begin{tabular}{p{2.1cm}p{12.0cm}}
+	2020& Dissertation award of TU Dortmund University (awarded for best Computer Science PhD thesis in 2020)\\
+	2020& Nominated (by TU Dortmund University) for the dissertation award of the German computer science association (GI Dissertationspreis)\\
+\end{tabular}
+
 \subsection*{Invited Talks}
 \begin{tabular}{p{2.1cm}p{12.0cm}}
-%11/2020&INFORMS Annual Meeting, \emph{Limits Of Graphs Neural Networks For Combinatorial Optimization} \\
+11/2020&INFORMS Annual Meeting, \emph{Limits Of Graphs Neural Networks For Combinatorial Optimization} \\
 10/2019&IBM Research, Zürich, \emph{Graph Classification: Kernel and Neural Approaches}\\
 05/2019&NEC Research, Heidelberg, \emph{Graph Classification: Kernel and Neural Approaches}\\ 
 03/2018&Stanford, SNAP, Infolab, \emph{Learning Higher-order Graph Embeddings: Theory and Practice}\\
@@ -206,24 +228,27 @@ Christopher Morris.
 
 Supervised eight bachelor and master thesis, one intern\\
 
-\begin{tabular}{p{3.1cm}p{12.0cm}}
-SS 2019&Proseminar \emph{Graph Algorithms}\\
-WS 2017/18&Seminar \emph{Algorithm Engineering}\\
-SS 2017&Seminar \emph{Algorithm Engineering}\\
-WS 2016/17&Student project group \emph{Algorithm Engineering for Graph Data Mining}, Seminar \emph{Algorithms Unplugged}\\
-SS 2016&Seminar \emph{Algorithm Engineering}, Seminar \emph{Graph Mining}\\
-WS 2015/16& Seminar \emph{Algorithm Engineering}\\
-As a student& Programming tutorials for engineering students, teaching assistant for a course on theoretical computer science\\
+\begin{tabular}{p{12.0cm}}
+Proseminar \emph{Graph Algorithms}\\
+Seminar \emph{Algorithm Engineering}\\
+Seminar \emph{Algorithm Engineering}\\
+Student project group \emph{Algorithm Engineering for Graph Data Mining}, Seminar \emph{Algorithms Unplugged}\\
+Seminar \emph{Algorithm Engineering}, Seminar \emph{Graph Mining}\\
+ Seminar \emph{Algorithm Engineering}\\
+ Programming tutorials for engineering students, teaching assistant for a course on theoretical computer science\\
 \end{tabular}
 
 \subsection*{Service to the Profession}
-Program committee member for IJCAI 2019, NeurIPS  2019, AAAI 2020, ICML 2020, IJCAI2020, ECML-PKDD 2020,  NeurIPS 2020, ICLR 2021\\
+
+%Co-organizer of the Dagsuhl seminar \emph{Graph Embeddings: Theory and Practice} (2021)\\
+
+Program committee member for IJCAI 2019, NeurIPS  2019, AAAI 2020, ICML 2020, IJCAI 2020, ECML-PKDD 2020,  NeurIPS 2020, ICLR 2021, AAAI 2021\\
 
 Program committee member for \emph{Representation Learning on Graphs and Manifolds} (ICLR 2019 Workshop), \emph{Learning and Reasoning with Graph-Structured Data} (ICML 2019 Workshop), \emph{Graph Representation Learning} (NeurIPS 2019 Workshop), \emph{Graph Representation Learning and Beyond} (ICML 2020 Workshop)\\
 
 (Sub-)Reviewer for WALCOM 2017, ISAAC 2018, ALENEX 2019, ESA 2018, ICALP 2020 \\
 
-Occasional reviews for IEEE Transactions on Pattern Analysis and Machine Intelligence, Journal of Machine Learning Research, ACM Transactions on Knowledge Discovery from Data, IEEE Transactions on Cybernetics, IEEE Transactions on Mobile Computing\\
+Occasional reviews for IEEE Transactions on Pattern Analysis and Machine Intelligence (2$\times$ 2020), Journal of Machine Learning Research (2020), ACM Transactions on Knowledge Discovery from Data (2019), IEEE Transactions on Cybernetics (2020), IEEE Transactions on Mobile Computing (2020)\\
 
 Initiator of \url{www.graphlearning.io}, a large collection of benchmark datasets for graph classification and regression\\
 
