@@ -32,6 +32,8 @@ pdfauthor={Christopher Morris}
 \usepackage{ellipsis}
 \usepackage{xspace}
 \usepackage{hfoldsty}
+\usepackage{longtable}
+\usepackage{tabu}
 
 \usepackage{ifthen}
 \newcommand{\CC}[1][]{$\text{C\hspace{-.25ex}}^{_{_{_{++}}}}
@@ -270,7 +272,7 @@ pdfauthor={Christopher Morris}
 	\bibitem{Mor+2015}
 	Luis Müller, Mikhail Galkin, Christopher Morris, Ladislav Rampášek.
 	\emph{Attending to Graph Transformers}, (Preprint: \texttt{arxiv:abs/2302.04181}), 2023.
-
+ wenm
 	\bibitem{Mor+2015}
 	Christopher Morris, Floris Geerts, Jan Tönshoff, Martin Grohe.
 	\emph{WL meet VC}, (Preprint: \texttt{arxiv:abs/2301.11039}), 2023.
@@ -281,14 +283,16 @@ pdfauthor={Christopher Morris}
 \end{thebibliography}
 
 \subsection*{Academic Honors}
-\begin{tabular}{p{2.1cm}p{12.0cm}}
+ \tabulinesep=0.8mm
+\begin{longtabu}{p{2.1cm}p{12.0cm}}
 	2021 & DFG Emmy Noether fellow                                                                                                             \\
 	2020 & Dissertation award of TU Dortmund University (awarded for best Computer Science PhD thesis in 2020)                                 \\
 	2020 & Nominated (by TU Dortmund University) for the dissertation award of the German computer science association (GI Dissertationspreis) \\
-\end{tabular}
+\end{longtabu}
 
 \subsection*{Invited Talks}
-\begin{tabular}{p{2.1cm}p{12.0cm}}
+\begin{longtabu}{p{2.1cm}p{12.0cm}}
+	
 	12/2023 & Dagstuhl workshop ``Scalable Graph Mining and Learning (23491),'' Dagstuhl, \emph{Weisfeiler and Leman go Machine Learning: Expressivity and Generalization Abilities of GNNs}                                                                                                \\
 	06/2023 & Satellite Conference ``Deep Learning with Higher-Order Network Model'' at the International School
 	and Conference on Network Science (NetSci) 2023, Vienna, \emph{Weisfeiler and Leman go Machine Learning: Expressivity and Generalization Abilities of GNNs}                                                                                                                             \\
@@ -303,29 +307,30 @@ pdfauthor={Christopher Morris}
 	01/2022 & RWTH Aachen University (virtual), \emph{Learning with Graphs: From Theory to Applications}                                                                                                                                                                                    \\
 	12/2021 & RWTH Aachen University (virtual), \emph{Learning with Graphs: From Theory to Applications}                                                                                                                                                                                    \\
 	10/2021 & University of Oxford (virtual), \emph{Learning with Graphs: Graph Neural Networks and the Weisfeiler-Leman algorithm}                                                                                                                                                         \\
-\end{tabular}
-
-\begin{tabular}{p{2.1cm}p{12.0cm}}
 	07/2021 & Saarland University (virtual), \emph{Machine Learning with Graphs: From Theory to Applications in Science and Engineering} \\
 	07/2021 & University of Hannover (virtual), \emph{Machine Learning with Graphs:
-	From Theory to Applications in Science and Engineering}                                                                              \\
+		From Theory to Applications in Science and Engineering}                                                                              \\
 	11/2020 & McGill University (virtual), \emph{Limits of Graph Neural Networks and the Weisfeiler-Leman algorithm}                     \\
 	11/2020 & INFORMS Annual Meeting (virtual), \emph{Limits Of Graphs Neural Networks For Combinatorial Optimization}                   \\
 	10/2019 & IBM Research, Zürich, \emph{Graph Classification: Kernel and Neural Approaches}                                            \\
 	05/2019 & NEC Research, Heidelberg, \emph{Graph Classification: Kernel and Neural Approaches}                                        \\
 	03/2018 & Stanford University, SNAP, Infolab, \emph{Learning Higher-order Graph Embeddings: Theory and Practice}                     \\
 	07/2017 & RWTH Aachen University, Chair of Logic and the Theory of Discrete Systems, \emph{Graph Classification: Kernels and Beyond} \\
+\end{longtabu}
+
+\begin{tabular}{p{2.1cm}p{12.0cm}}
+
 \end{tabular}
 
 \subsection*{Supervised PhD students}
-\begin{tabular}{p{3.0cm}p{11.5cm}}
+\begin{longtabu}{p{3.0cm}p{11.5cm}}
 	02/2023--present & Quendi Qian \\
 	10/2022--present & Luis Müller \\
-\end{tabular}
+\end{longtabu}
 
 
 \subsection*{Supervised Bachelor and Master students}
-\begin{tabular}{p{2.1cm}p{12.0cm}}
+\begin{longtabu}{p{2.1cm}p{12.0cm}}
 	2023 & Nuray Agaoglu, \emph{Combining Semi- and Self- Supervised Learning in Image Classification}, Bachelor thesis, co-supervision with Abigail Morrison, RWTH Aachen University\\    
 	2023 & Timothy Borrell, \emph{TBD}, Master thesis, RWTH Aachen University\\
 	2023 & Tobias J.\ Amelingmeyer, \emph{Insights into Automated Algorithm Selection Models using Explainable Articial Intelligence}, Bachelor thesis, co-supervision with Holger Hoos, RWTH Aachen University \\
@@ -340,12 +345,12 @@ pdfauthor={Christopher Morris}
 	2016 & Christopher Osthues, \emph{Experimenteller Vergleich von Labeling-Verfahren für Graphkerne}, Bachelor thesis, TU Dortmund University                                                                 \\
 	2016 & Serdar Ayaz, \emph{Approximation des Weisfeiler-Lehman-Isomorphie-Tests durch Sampling}, Bachelor thesis, TU Dortmund University                                                                     \\
 	2016 & Marcel Walker, \emph{Dimensionsreduktion von expliziten Graphkernen durch Hashing}, Bachelor thesis, TU Dortmund University                                                                          \\
-\end{tabular}
+\end{longtabu}
 
 
 \subsection*{Teaching}
 
-\begin{tabular}{p{2.1cm}p{12.0cm}}
+\begin{longtabu}{p{2.1cm}p{12.0cm}}
 	SS 2023    & Master course \& exercise \emph{Foundations and Applications of Machine Learning with Graphs}                                                                                   \\
 	           & Bachelor proseminar \emph{Maschinelles Lernen mit Graphen}                                                                                                                      \\
 	WS 2022    & Master seminar \emph{Foundations of Supervised Machine Learning with Graphs}                                                                                                    \\
@@ -357,13 +362,10 @@ pdfauthor={Christopher Morris}
 	SS 2017    & Seminar \emph{Algorithm Engineering} (supervised students and helped with organization)                                                                                         \\
 	WS 2016/17 & Student project group \emph{Algorithm Engineering for Graph Data Mining} (co-organizer), Seminar \emph{Algorithms Unplugged} (supervised students and helped with organization) \\
 	SS 2016    & Seminar \emph{Algorithm Engineering}, Seminar \emph{Graph Mining} (supervised students and helped with organization)                                                            \\
-\end{tabular}
-
-\begin{tabular}{p{2.1cm}p{12.0cm}}
 	WS 2016/17   & Student project group \emph{Algorithm Engineering for Graph Data Mining} (co-organizer), Seminar \emph{Algorithms Unplugged} (supervised students and helped with organization) \\
 	SS 2016      & Seminar \emph{Algorithm Engineering}, Seminar \emph{Graph Mining} (supervised students and helped with organization)                                                            \\
 	As a student & Programming tutorials for engineering students, teaching assistant for a course on theoretical computer science                                                                 \\
-\end{tabular}
+\end{longtabu}
 
 \subsection*{Service to the Profession}
 \begin{tabular}{p{14.5cm}}
@@ -389,10 +391,6 @@ pdfauthor={Christopher Morris}
 \begin{tabular}{p{14.5cm}}
 	Member of the PhD examination board of Leslie O'Brien, ETH Zürich, 2023 \\[0.5em]
 \end{tabular}
-
-%\begin{tabular}{p{14.5cm}}	
-%	Program chair LoG Conference 2023 (Learning on Graphs Conference)\\[0.5em]
-%\end{tabular}
 
 \begin{tabular}{p{14.5cm}}
 	Area chair for LoG Conference 2022 (Learning on Graphs Conference), Senior program committee member for AAAI 2023 \\[0.5em]
@@ -426,7 +424,6 @@ pdfauthor={Christopher Morris}
 \end{tabular}
 
 \subsection*{Academic Outreach}
-
 \begin{tabular}{p{14.5cm}}
 	Talk and plenary session at the German Academic International Network (GAIN) meeting 2022 \\[0.5em]
 
@@ -438,7 +435,7 @@ pdfauthor={Christopher Morris}
 \begin{tabular}{l}
 	\textsf{\textbf{\em Computational Skills}} Python, C\hspace{-1pt}+\hspace{-1pt}+, \LaTeX, NumPy, Scikit-learn, PyTorch, PyTorch Geometric \\
 	\textsf{\textbf{\em Languages}} German (native), English (fluent)                                                                         \\
-	\textsf{\textbf{\em Citizenship}} German and British
+	\textsf{\textbf{\em Citizenship}} German and British\\
 \end{tabular}
 
 \subsection*{References}
