@@ -8,6 +8,7 @@
 \usepackage[l2tabu, orthodox]{nag}
 \usepackage[symbol]{footmisc}
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{array}
 
 \setlength\parindent{0in} 
 \usepackage[usenames,dvipsnames]{xcolor} 
@@ -66,7 +67,7 @@ pdfauthor={Christopher Morris}
 		E-mail: \texttt{{morris@cs.rwth-aachen.de}}       \\
 		Homepage: \url{http://www.christophermorris.info} \\
 	\end{tabular}
-	
+		\renewcommand{\arraystretch}{1.3}
 	\subsection*{Areas of Specialization}
 	\noindent
 	\begin{tabular}{p{15.0cm}}
@@ -94,8 +95,6 @@ pdfauthor={Christopher Morris}
 	
 	\renewcommand{\refname}{\large\bfseries Publications}
 	
-	
-	
 	\begin{thebibliography}{15}
 		\subsubsection*{Conference Papers}
 		\bibitem{Mor+2015}
@@ -103,7 +102,6 @@ pdfauthor={Christopher Morris}
 		\emph{Exploring the Power of Graph Neural Networks in Solving Linear Optimization Problems},
 		International Conference on Artificial Intelligence and Statistics (AISTATS), 2023.		
 		
-	
 		\bibitem{Mor+2015}
 		Chendi Qian, Andrei Manolache, Kareem Ahmed, Zhe Zeng, Guy Van den Broeck, Mathias Niepert, Christopher Morris.
 		\emph{Probabilistically Rewired Message-Passing Neural Networks}, 
@@ -205,6 +203,11 @@ pdfauthor={Christopher Morris}
 		IEEE International Conference on Data Mining (ICDM), pages 1095--1100, 2016.
 		
 		\subsubsection*{Journal Articles}
+		
+		\bibitem{Mor+2015}
+		Luis Müller, Mikhail Galkin, Christopher Morris, Ladislav Rampášek.
+		\emph{Attending to Graph Transformers}, Transaction on Machine Learning Research (TMLR), 2024.		
+		
 		\bibitem{Mor+2015}
 		Christopher Morris, Yaron Lipman, Haggai Maron, Bastian Rieck, Nils M. Kriege, Martin Grohe, Matthias Fey, Karsten Borgwardt.
 		\emph{Weisfeiler and Leman go Machine Learning: The Story so far}, Journal of Machine Learning Research (JMLR), 2023.
@@ -313,7 +316,6 @@ pdfauthor={Christopher Morris}
 	\end{thebibliography}
 	
 	\subsection*{Academic Honors}
-	\tabulinesep=0.8mm
 	\begin{longtabu}{p{2.1cm}p{12.0cm}}
 		2022 & DFG Emmy Noether fellow                                                                                                             \\
 		2020 & Dissertation award of TU Dortmund University (awarded for best Computer Science PhD thesis in 2020)                                 \\
@@ -413,12 +415,10 @@ pdfauthor={Christopher Morris}
 		SS 2016      & Seminar \emph{Algorithm Engineering}, Seminar \emph{Graph Mining} (supervised students and helped with organization)                                                            \\
 		As a student & Programming tutorials for engineering students, teaching assistant for a course on theoretical computer science                                                                 \\
 	\end{longtabu}
-	
 	\subsection*{Service to the Profession}
-	\begin{longtabu}{p{14.5cm}}
-	Reviewer for the Swiss National Science Foundation (SNF) (1 $\times$ 2023), reviewer for the German Research Foundation (DFG) (1$\times$2023, 1$\times$2024)	\\
-		
-	
+	\begin{longtabu}{p{14.5cm}} 
+	    Reviewer for the Swiss National Science Foundation (SNF) (1 $\times$ 2023), reviewer for the German Research Foundation (DFG) (1$\times$2023, 1$\times$2024) \\[2.5em]
+	    
 		Panellist at the \emph{Workshop on Geometrical and Topological Representation Learning} (ICLR 2022 workshop) \\
 		Co-organizer of the graph machine learning reading group at Mila -- Quebec AI Institute (\url{grlmila.github.io}) \\
 		
@@ -441,27 +441,26 @@ pdfauthor={Christopher Morris}
 		
 		Member of the appointment commission for the professorship \emph{Data Mining} (TU Dortmund University, 2017)
 	\end{longtabu}
-	
+
 	\subsection*{Grants}
 	\begin{tabular}{p{14.5cm}}
-		DFG Emmy Noether grant (individual grant 970\,460 + 776 460\,€)                                                 \\[0.5em]
+		DFG Emmy Noether grant (individual grant 970\,460 + 776 460\,€)                                                 \\
+		RWTH Junior Principal Investigator Fellowship (individual grant 958\,918\,€)                                    \\
 		
-		RWTH Junior Principal Investigator Fellowship (individual grant 958\,918\,€)                                    \\[0.5em]
-		
-		Principal investigator of the DFG graduate school ``UnRAVeL -- UNcertainty and Randomness in Algorithms, VErification and Logic''  (3 PhD years, 239\,400\,€) \\[1.5em]
+		Principal investigator of the DFG graduate school ``UnRAVeL -- UNcertainty and Randomness in Algorithms, VErification and Logic''  (3 PhD years, 239\,400\,€) \\
 				
-		Associated principal investigator of the Helmholtz School for Data Science in Life, Earth and Energy (HDS-LEE) graduate school (1.5 PhD years, 119\,700\,€) \\[1.5em]
+		Associated principal investigator of the Helmholtz School for Data Science in Life, Earth and Energy (HDS-LEE) graduate school (1.5 PhD years, 119\,700\,€) \\
 		
-		DAAD IFI postdoc scholarship for a 13 month stay at the Mila--Quebec AI Institute (own funding 38\,909\,€) \\[1.5em]
+		DAAD IFI postdoc scholarship for a 13 month stay at the Mila--Quebec AI Institute (own funding 38\,909\,€) \\
 		
 		Research associate and PhD student  within the Collaborative Research Center SFB 876, assisted in preparing the  grant proposal for project A6 \emph{Resource-efficient Graph Mining}\\
 	\end{tabular}
 	
 	\subsection*{Academic Outreach}
 	\begin{tabular}{p{14.5cm}}
-		Interview with the daily newspaper Aachener Zeitung on my research and starting a new group at RWTH Aachen University \\[1.5em]	
+		Interview with the daily newspaper Aachener Zeitung on my research and starting a new group at RWTH Aachen University \\	
 	
-		Talk and plenary session at the German Academic International Network (GAIN) meeting 2022 \\[1.5em]
+		Talk and plenary session at the German Academic International Network (GAIN) meeting 2022 \\
 		
 		Interview for the DAAD magazine on my experience of moving back to Germany to continue my research career
 	\end{tabular}
@@ -469,11 +468,11 @@ pdfauthor={Christopher Morris}
 	\subsection*{Other}
 	
 	\begin{tabular}{l}
-		\textsf{\textbf{\em Computational Skills}} Python, C\hspace{-1pt}+\hspace{-1pt}+, \LaTeX, NumPy, Scikit-learn, PyTorch, PyTorch Geometric \\[0.2em]
-		\textsf{\textbf{\em Languages}} German (native), English (fluent)                                                                         \\[0.2em]
+		\textsf{\textbf{\em Computational Skills}} Python, C\hspace{-1pt}+\hspace{-1pt}+, \LaTeX, NumPy, Scikit-learn, PyTorch, PyTorch Geometric \\
+		\textsf{\textbf{\em Languages}} German (native), English (fluent)                                                                         \\
 		\textsf{\textbf{\em Citizenship}} German and British\\
 	\end{tabular}
-	
+		\renewcommand{\arraystretch}{1.0}
 	\subsection*{References}
 	
 	\begin{tabular}{l}
